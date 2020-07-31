@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="C:\VSCODE PROJECTS\GVSC Calc 2.0\calc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="C:\VSCODE PROJECTS\GVSC Calc 2.0\calc.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="index.html" method="post">
+                <h1> Sign Up </h1>
+
+                <fieldset>
+
+                    <legend><span class="number">1</span> Your Basic Info</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+
+                </fieldset>
+                <fieldset>
+
+                    <legend><span class="number">2</span> Costs and Savings</legend>
+
+                    <label for="CallCost">Monthly Call Cost:</label>
+                    <Input id="CallCost" type="number" name="MonthlyCallCost" />
+                    <p id=CallSave class=Save>You would save:</p>
+                    <label for="EquipCost">Monthly Equipment Rental Cost:</label>
+                    <input id="EquipCost" type="number" name="EquipmentRentalCost" />
+                    <p class=Save id=EquipSave></p>
+
+                    <label>Monthly telephone line rental Cost:</label>
+                    <select>
+                        <option>Telkom</option>
+                        <option>Other Service Provider</option>
+                    </select>
+                    <input id="lineCost" type="number" name="LineRental Cost" />
+                    <p class=Save id=LineSave></p>
+                </fieldset>
+
+                <button id="submit" type="button">Get Estimate</button>
+                <p class=Save id="TotalSave"></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
